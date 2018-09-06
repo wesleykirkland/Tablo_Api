@@ -1,0 +1,15 @@
+Function Get-TabloEpisodeMetaData {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory=$true)]
+        [int]$RecID
+    )
+
+    Begin {}
+
+    Process {
+        Invoke-TabloAPIRequest -Method GET -request 
+    }
+
+    End {}
+}
